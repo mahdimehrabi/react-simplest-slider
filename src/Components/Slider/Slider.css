@@ -3,3 +3,8 @@
     height: 100%;
     background-color: white;
 }
+
+.ButtonRight{
+    top:50%;
+    right:50%;
+}
