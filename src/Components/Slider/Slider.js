@@ -17,10 +17,19 @@ const Slider = (props) => {
         });
     }
 
+    const prevSlideHandler = () => {
+        setSliderState(prevState => {
+            let nextSlide = prevState.currentSlide - 1;
+            if (nextSlide < 0)
+                nextSlide = props.children.length - 1;
+            return {currentSlide: nextSlide};
+        });
+    }
+
     return (
         <div className={classes.Slider}>
             {props.buttons && <>
-                <Button left/>
+                <Button left click={prevSlideHandler}/>
                 <Button click={nextSlidehandler} right/>
             </>}
             {props.children[sliderState.currentSlide]}
