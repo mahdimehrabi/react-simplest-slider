@@ -7,7 +7,10 @@ const Slider = (props) => {
 
     return (
         <div className={classes.Slider}>
-            <Button/>
+            {props.buttons&&<>
+                <Button left/>
+                <Button right/>
+            </>}
         </div>
     );
 }

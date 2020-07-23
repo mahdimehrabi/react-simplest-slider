@@ -7,7 +7,7 @@ const SliderContainer = (props) => {
 
     return (
         <div className={classes.Container}>
-            <Slider/>
+            <Slider buttons />
         </div>
     );
 }

@@ -4,7 +4,7 @@ import buttonIcon from "./slider-button.png"
 
 const Slider = (props) => {
     return (
-        <span className={classes.ButtonRight}>
+        <span className={[props.right ? classes.ButtonRight : classes.ButtonLeft, classes.Button].join(" ")}>
             <img src={buttonIcon}/>
         </span>
     );
