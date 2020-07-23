@@ -1,19 +1,13 @@
 import React, {useState, Fragment} from "react";
 import classes from "./Slider.css";
+import Button from "./UI/Button/Button";
 
 const Slider = (props) => {
     const [myState, setMyState] = useState([]);
 
-    const buttons = (
-        <Fragment>
-            <span className={classes.ButtonRight}></span>
-            <span className={classes.ButtonLeft}></span>
-        </Fragment>
-    );
-
     return (
         <div className={classes.Slider}>
-
+            <Button/>
         </div>
     );
 }
