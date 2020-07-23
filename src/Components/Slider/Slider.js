@@ -11,6 +11,7 @@ const Slider = (props) => {
                 <Button left/>
                 <Button right/>
             </>}
+            {props.children}
         </div>
     );
 }
